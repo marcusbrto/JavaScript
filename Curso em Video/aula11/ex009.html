@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex009</title>
+  </head>
+  <body>
+    <h1>É Brasileiro?</h1>
+    <input
+      type="text"
+      name="localidade"
+      id="localidade"
+      placeholder="Nacionalidade"
+      required
+    />
+    <input type="button" value="Enviar" onclick="identificar()" />
+    <div id="res"></div>
+    <script>
+      function identificar() {
+        var localizacao = window.document.getElementById('localidade');
+        var res = window.document.getElementById('res');
+        if (localizacao.value == 'Brasil') {
+          res.innerHTML += `<p><strong>BRASILEIRO!</strong></p>`;
+        } else {
+          res.innerHTML += `<p><strong>GRINGO!</strong></p>`;
+        }
+      }
+    </script>
+  </body>
+</html>
