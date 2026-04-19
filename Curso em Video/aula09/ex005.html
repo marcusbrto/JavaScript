@@ -15,10 +15,23 @@
 <body>
     <h1>Iniciando estudos com</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
+    <p id="msg">Aprendendo a usar <strong>DOM</strong> em JavaScript.</p>
     <div>Clique em mim</div>
+    <br>
     <script>
-        window.document.write(window.document.URL)
+        var p1 = window.document.getElementsByTagName("p")[1]
+        var d = window.document.getElementById('msg')
+        // p1.style.color = 'red'
+        // var corpo = window.document.body
+        // corpo.style.color = 'black'
+        d.style.background = 'green'
+        window.document.getElementById('msg').innerText = 'Olá'
+        // window.document.write("Está escrito assim: " + d.innerText)
+
+        // window.document.write("Está escrito assim: " + p1.innerText)
+
+        // window.document.write("Está escrito assim: " + p1.innerHTML)//esse aqui puxa com a formatação
+  
     </script>
 </body>
 </html>
